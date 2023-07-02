@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tax calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css"></style>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tax calculator</h1>
+    </header>
+    <main>
+        <form id="frmTax">
+            <label for="txtAmount">Monetary amount</label><br>
+            <input type="text" id="txtAmount" value="0" pattern="\d*(\.\d{0,2})?" required><br>
+            <label for="txtTaxPercent">Tax percentage</label><br>
+            <input type="text" id="txtTaxPercent" value="0" pattern="(\d{0,2}\.)?\d{0,2}" required><br>
+            <input type="submit" value="Calculate">
+        </form>
+        <section id="results">
+            <div>Tax amount: <span id="tax">0</span></div>
+            <div>Final amount: <span id="final">0</span></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2021 Arturo Mora-Rioja</p>
+    </footer>
+</body>
+</html>
