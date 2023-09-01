@@ -3,8 +3,8 @@
 document.querySelector('#frmTax').addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const amount = parseFloat(document.querySelector('#txtAmount').value);
-    const taxPercent = parseFloat(document.querySelector('#txtTaxPercent').value);
+    const amount = parseFloat(e.target.txtAmount.value);
+    const taxPercent = parseFloat(e.target.txtTaxPercent.value);
     
     const tax = (taxPercent * amount) / 100;
 
