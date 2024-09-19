@@ -16,6 +16,10 @@
 
 body {
     font-family: var(--fontMain);
+    @media (min-width: 450px) {
+        width: 80vw;
+        margin-inline: auto;    
+    }
 }
 
 header {
@@ -39,8 +43,19 @@ footer {
     text-align: center;
 }
 
-input[type=text] {
-    text-align: right;
+form {
+    display: grid;
+    grid-template-areas: 
+        "label textbox";
+    grid-template-rows: repeat(2, auto);
+    justify-content: start;
+
+    label {
+        margin-right: 1rem;
+    }
+    input[type=number] {
+        text-align: right;
+    }
 }
 
 input[type=submit] {
