@@ -8,6 +8,6 @@ document.querySelector('#frmTax').addEventListener('submit', (e) => {
     
     const tax = (taxPercent * amount) / 100;
 
-    document.querySelector('#tax').innerHTML = tax.toFixed(2);
-    document.querySelector('#final').innerHTML = (amount - tax).toFixed(2);
+    document.querySelector('#tax').innerText = tax.toFixed(2);
+    document.querySelector('#final').innerText = (amount + tax).toFixed(2);
 });

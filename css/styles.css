@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
-
 :root {
     --colorTextSecondary: floralwhite;
 
@@ -12,6 +11,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
