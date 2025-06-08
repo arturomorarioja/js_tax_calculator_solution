@@ -1,4 +1,4 @@
-# KEA Tax Calculator
+# Tax Calculator
 Simple DOM manipulation example.
 
 ## Tools
